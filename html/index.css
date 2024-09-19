@@ -1,0 +1,140 @@
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: #ffcc00;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-primary, .btn-warning {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before, .btn-warning::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(250, 247, 247, 0.1);
+    transition: all 0.5s ease;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+}
+
+.btn-primary:hover::before, .btn-warning:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.testimonial {
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.testimonial img {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.cta-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.intro-section {
+    padding: 60px 0;
+}
+
+.features-section .card {
+    border: none;
+    background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(218, 165, 32, 0.9));
+    color: #f8f9fa;
+}
+
+.features-section .feature-card {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.features-section .feature-card:hover {
+    transform: scale(1.05);
+}
+
+.testimonial {
+    border-radius: 10px;
+}
+
+.pricing-section .pricing-card {
+    border-radius: 10px;
+    border: 2px solid goldenrod;
+    background: linear-gradient(rgb(218, 165, 32, 0.9), rgb(0, 0, 0, 0.8));
+    transition: transform 0.3s ease;
+}
+
+.pricing-section .pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.cta-section {
+    background-color: #343a40;
+}
+
+.footer a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: gold;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.footer a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.fab {
+    font-size: 24px;
+}
